@@ -32,9 +32,7 @@ end
 
 function onBattleAction()
 	if isWildBattle() and isOpponentShiny() then
-		if useItem("Ultra Ball") or useItem("Great Ball") or useItem("Pokeball") then
-			return
-		end
+		return useItem("Ultra Ball") or useItem("Great Ball") or useItem("Pokeball")
 	end
 	if getActivePokemonNumber() == 1 and isOpponentEffortValue("Speed") then
 		return attack() or run() or sendUsablePokemon() or sendAnyPokemon()
