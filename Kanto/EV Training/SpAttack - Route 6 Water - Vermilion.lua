@@ -16,12 +16,12 @@ function onPathAction()
 		if getMapName() == "Pokecenter Vermilion" then
 			moveToMap("Vermilion City")
 		elseif getMapName() == "Vermilion City" then
-			moveToMap("Route 4")
+			moveToMap("Route 6")
 		elseif getMapName() == "Route 6" then
 			moveToRectangle(15, 35, 30, 41)
 		end
 	else
-		if getMapName() == "Route 4" then
+		if getMapName() == "Route 6" then
 			moveToMap("Vermilion City")
 		elseif getMapName() == "Vermilion City" then
 			moveToMap("Pokecenter Vermilion")
