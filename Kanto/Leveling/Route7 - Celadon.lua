@@ -1,4 +1,4 @@
--- Copyright © 2016 Silv3r <silv3r@proshine-bot.com>
+-- Copyright © 2018 Silv3r <silv3r@proshine-bot.com>
 -- This work is free. You can redistribute it and/or modify it under the
 -- terms of the Do What The Fuck You Want To Public License, Version 2,
 -- as published by Sam Hocevar. See the LICENSE file for more details.
@@ -36,8 +36,8 @@ function onBattleAction()
 		end
 	end
 	if getActivePokemonNumber() == 1 then
-		return attack() or sendUsablePokemon() or run() or sendAnyPokemon()
+		return attack() or sendUsablePokemon() or run() or sendAnyPokemon() or useAnyMove()
 	else
-		return run() or attack() or sendUsablePokemon() or sendAnyPokemon()
+		return run() or attack() or sendUsablePokemon() or sendAnyPokemon() or useAnyMove()
 	end
 end
